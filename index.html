@@ -11,7 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <!--link fontawesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--link del css-->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -24,23 +26,53 @@
     </main>
     <!--FOOTER/PLAYER MUSICALE CON ICONE E BARRE VOLUME E TASTI-->
     <footer>
-        <section class="flex-container">
-            <div><!--tutte icone con funzione hover-->
-                <i class="fa-solid fa-image"></i><span>NOME BAND</span>
-                            <span>BRANO NOME</span>
-                             <span><i class="fa-regular fa-heart"></i></span><span></span>
-            </div>
-            <div>
-                <div>
-                    <span><i class="fa-solid fa-shuffle"></i></span>/ <span><i class="fa-solid fa-backward-step"></i></span>/ <span><i class="fa-regular fa-circle-play"></i></span><span><i class="fa-solid fa-forward-step"></i></span><span><i class="fa-solid fa-rotate-right"></i></span>
+        <section class="flex-container footer-container">
+            <div class="flex-container song-in-play-cont"><!--tutte icone con funzione hover-->
+                <div class="album-song-img">
+                    <i class="fa-solid fa-image"></i>
+
                 </div>
-                <div>
-                    <span></span>
+                <div class="info-f-song">
+                    <span><strong>NOME BAND</strong></span><br>
+                    <span>BRANO NOME</span>
+
                 </div>
-                TIMELAPS / BARRA DEL TEMPO IMPIEGATO/ FINE TIMELAPS
+                <div class="heart-folder-cont">
+                    <span class="footer-icons-sx footer-icons"><i class="fa-regular fa-heart"></i></span>
+                    <span class="footer-icons-sx footer-icons"><i class="fa-regular fa-folder"></i></span>
+                </div>
+
             </div>
-            <div>
-                ICONA PLAYLIST/ ICONA SCHERMO/ ICONA VOLUME/ BARRA VOLUME<!--possibile div con elemento che si colora-->
+            <div class="interactive-music-bar">
+                <div class="icon-f-center-container">
+                    <span class="footer-icons"><i class="fa-solid fa-shuffle fa-lg"></i></span>
+                    <span class="footer-icons"><i class="fa-solid fa-backward-step fa-lg"></i></span>
+                    <span class="footer-icons"><i class="fa-regular fa-circle-play fa-xl"></i></span>
+                    <span class="footer-icons"><i class="fa-solid fa-forward-step fa-lg"></i></span>
+                    <span class="footer-icons"><i class="fa-solid fa-rotate-right fa-lg"></i></span>
+                </div>
+                <div class="flex-container timelaps-music-container">
+                    <div class="time-played">1:00</div>
+                    <div class="flex-container timelaps-bar">
+                        <div class="small-timelaps-bar"></div>
+                        <div class="large-timelaps-bar"></div>
+                    </div>
+                    <div class="time-music">4:00</div>
+
+                </div>
+
+            </div>
+            <div class="flex-container volume-cont">
+                <div class="volume-screen-f-cont">
+                    <span class="footer-icons"><i class="fa-solid fa-list"></i></span>
+                    <span class="footer-icons"><i class="fa-solid fa-display"></i></span>
+                    <span class="footer-icons"><i class="fa-solid fa-volume-high"></i></span>
+                </div>
+                <!--possibile div con elemento che si colora-->
+                <div class="flex-container volume-bar">
+                    <div class="small-timelaps-bar"></div>
+                    <div class="large-timelaps-bar"></div>
+                </div>
             </div>
         </section>
     </footer>

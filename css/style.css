@@ -1,22 +1,112 @@
 /*
 RESET
 */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}/*
+    font-family: 'Montserrat';
+}
+
+/*
 GENERAL
 */
-.flex-container{
+.flex-container {
     display: flex;
-    justify-content: space-between;
+
 }
+
 /*
 FOOTER
 */
-footer{
+footer {
+    --position: fixed;
     width: 100vw;
-    height: 100px;
-    background-color:#282828;
+
+    background-color: #282828;
+}
+
+.footer-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.song-in-play-cont{
+    align-items: center;
+    
+}
+.album-song-img{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+.icon-f-center-container {
+
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+.info-f-song{
+    padding-left: 10px;
+    font-size: 0.75rem;
+    color: white;
+}
+.heart-folder-cont{
+    padding-left: 20px;
+}
+.timelaps-music-container {
+    align-items: center;
+    color: white;
+    font-size: 0.75rem;
+}
+
+.timelaps-bar {
+    width: 300px;
+
+
+
+}
+
+.small-timelaps-bar {
+    width: 25%;
+    height: 5px;
+    background-color: grey;
+    border-radius: 20px;
+}
+
+.large-timelaps-bar {
+    width: 75%;
+    height: 5px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.time-played {
+    padding-right: 30px;
+}
+
+.time-music {
+    padding-left: 30px;
+
+}
+
+.volume-cont {
+    align-items: center;
+}
+
+.volume-bar {
+    width: 70px;
+
+}
+.volume-screen-f-cont{
+    padding-right: 20px;
+}
+.footer-icons {
+    padding-left: 15px;
+    color: white;
+}
+.footer-icons-sx{
+    color: grey;
 }
