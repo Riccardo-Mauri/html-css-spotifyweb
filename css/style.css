@@ -74,8 +74,14 @@ footer {
     height: 5px;
     background-color: grey;
     border-radius: 20px;
+    position: relative;
 }
-
+.dot-music{
+    position: absolute;
+    top: -5px;
+    right: 0;
+    --display: none;
+}
 .large-timelaps-bar {
     width: 75%;
     height: 5px;
@@ -109,4 +115,31 @@ footer {
 }
 .footer-icons-sx{
     color: grey;
+}
+.info-f-song >.link-name >a{
+    text-decoration: none;
+    color: white;
+}
+/*
+HOVER-NEL-FOOTER
+*/
+.footer-icons-sx:hover{
+    color: white;
+}
+.info-f-song >.link-name >a:hover{
+    text-decoration: underline;
+}
+.icon-scale{
+    display: inline-block;
+    transition: 0s;
+}
+.icon-f-center-container >.icon-scale:hover{
+    transform: scale(1.3);
+}
+.small-timelaps-bar:hover{
+    background-color: lightgreen;
+    height: 7px;
+}
+.dot-music:hover{
+    display:block;
 }
