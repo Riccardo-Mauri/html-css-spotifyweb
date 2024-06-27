@@ -22,7 +22,8 @@
     <!--SEZIONE PRINCIPALE-->
     <main>
         <section class="flex-container container">
-            <section class="nav-sx-container"><!--barra laterale con link del sito/logo/home/cerca/liberia le proprie playlist-->
+            <section class="nav-sx-container">
+                <!--barra laterale con link del sito/logo/home/cerca/liberia le proprie playlist-->
                 <div class="upper-nav-sx">
                     <div class="logo-img"><img src="./img/logo.svg" alt=""></div>
                     <div class="flex-container flex-padding">
@@ -53,7 +54,8 @@
 
                 </div>
                 <div class="personal-info"><!--barra app nome dell'utente e avatar in basso a sinistra-->
-                    <div class="app-dwn"><span><i class="fa-solid fa-circle-down"></i></span><a href="#"> Scarica l'App</a></div>
+                    <div class="app-dwn"><span><i class="fa-solid fa-circle-down"></i></span><a href="#"> Scarica
+                            l'App</a></div>
                     <div class="hr-personal-info"></div>
                     <div class="flex-container">
                         <div class="avatar-icon"><img src="./img/profile.svg" alt="avatar-icon"></div>
@@ -63,16 +65,86 @@
                 </div>
             </section>
 
-            <section class="overflow-container"><!--dove inserire le immagini e dove c'è la scrollbar/contenuto principale-->
+            <section class="overflow-container">
+                <!--dove inserire le immagini e dove c'è la scrollbar/contenuto principale-->
                 <div><!--barra superiore vuota solo con bottone effettua upgrade-->
-                    <div class="upgrade-button"><button>EFFETTUA L'UPGRADE</button></div>
-                    
-                </div>
-                <div><!--contenuto principale-->
+                    <div class=" flex-container button-container">
+                        <button class="upgrade-button">EFFETTUA L'UPGRADE</button>
+                    </div>
 
                 </div>
+                <div class="list-link-container"><!--contenuto principale-->
+                    <div class="listed-link-main">
+                        <ul>
+                            <li><a href="#">IN EVIDENZA</a><div class="bottom-border-hover"></div></li>
+                            <li><a href="#">PODCAST</a></li>
+                            <li><a href="#">CLASSIFICHE</a></li>
+                            <li><a href="#">GENERI E MOOD</a></li>
+                            <li><a href="#">NUOVE USCITE</a></li>
+                            <li><a href="#">SCOPRI</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-content-cont">
+                    <h2>Recently Played</h2>
+                    <div class="my-row">
+                        <div class="my-col">
+                            <img src="./img/metal_lifting.jpg" alt="">
+                            <h4>Heavy Metal</h4>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="my-col">
+                            <img src="./img/stranger.jpeg" alt="">
+                            <h4>Strange Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                            <p>Kyle Dixon & Michael Stein</p>
+                        </div>
+                        <div class="my-col">
+                            <img src="./img/aquietplace.jpeg" alt="">
+                            <h4>A quiet place</h4>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="my-col">
+                            <img src="./img/split.jpeg" alt="">
+                            <h4>split</h4>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="my-col">
+                            <img src="./img/cure.jpeg" alt="">
+                            <h4>A cure for wellness</h4>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="my-col">
+                            <img src="./img/sinister.jpeg" alt="">
+                            <h4>Sinister</h4>
+                            <p>Subtitle</p>
+                        </div>
+
+                    </div>
+                    <h2>Creato per Riccardo</h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                    <div class="my-row">
+                        <div class="my-col">
+                            <img src="./img/radar.jpeg" alt="">
+                        </div>
+                        <div class="my-col">
+                            <img src="./img/mixdaily.jpeg" alt="">
+                        </div>
+                    </div>
+                    <h2>Artisti più Popolari</h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                    <div class="my-row ">
+                        <div class="my-col rounded-col">
+                            <img src="img/youg.jpeg" alt="">
+                            <h4>Lana del rey</h4>
+                            
+                        </div>
+                        <div class="my-col rounded-col">
+                            <img src="./img/einaudi.jpeg" alt="">
+                            <h4>Ludovico Enaudi</h4>
+                        </div>
+                    </div>
+                
             </section>
-
         </section>
     </main>
     <!--FOOTER/PLAYER MUSICALE CON ICONE E BARRE VOLUME E TASTI-->
@@ -106,9 +178,9 @@
                     <div class="time-played">1:00</div>
                     <div class="flex-container timelaps-bar">
                         <div class="small-timelaps-bar">
-                           <div class="dot-music">
-                            <span><i class="fa-solid fa-circle-dot"></i></span>
-                           </div> 
+                            <div class="dot-music">
+                                <span><i class="fa-solid fa-circle-dot"></i></span>
+                            </div>
                         </div>
                         <div class="large-timelaps-bar"></div>
                     </div>

@@ -11,9 +11,11 @@ RESET
 /*
 GENERAL
 */
+body{
+    position: relative;
+}
 .flex-container {
     display: flex;
-
 }
 .flex-padding{
     padding-left: 20px;
@@ -32,13 +34,14 @@ main {
 }
 
 .container {
-    flex-direction: row;
+    height: calc(100vh - 100px);
+    
 }
 
 .nav-sx-container {
     width: 300px;
-    min-height: 600px;
     background-color: #000000;
+    position: relative;
 }
 .upper-nav-link{
   padding-top: 15px;
@@ -97,14 +100,19 @@ main {
     text-decoration: none;
     color: grey;
 }
+.playlist-cont >a:hover{
+    color: white;
+}
 .personal-info{
     width: 100%;
     min-height: 100px;
-    padding-bottom: 15px;
+    padding-left: 20px;
+    position: absolute;
+    bottom: 0;
+    
 }
 .personal-info >.app-dwn{
     padding-top: 20px;
-    padding-left: 20px;
     color: grey;
 }
 .personal-info >.app-dwn >a{
@@ -115,10 +123,8 @@ main {
     width: 80%;
     border-top: solid 1px;
     border-color: grey;
-    margin: 0 auto;
     margin-top: 15px;
     margin-bottom: 15px;
-   
     
 }
 .avatar-icon{
@@ -128,7 +134,10 @@ main {
     background-color: grey;
 }
 .avatar-icon >img{
-    
+    width: 30px;
+    height: 30px;
+    padding-left: 5px;
+    display: inline-block;
     object-fit: contain;
 }
 .user-name{
@@ -136,17 +145,143 @@ main {
     align-self: center;
     padding-left: 15px;
 }
-.overflow-container {}
+.overflow-container {
+    width: calc(100% - 100px);
+    overflow-y: auto;
+    
+}
+.button-container{
+    height: 100px;
+    background-color:#080B12;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    padding-right: 10px;
+}
 
 
+.upgrade-button {
+    height: 50px;
+    background-color: #080B12;
+    color: white;
+    text-decoration: none;
+    border:1px solid white; 
+    border-radius:30px;
+    padding: 20px;
+    line-height: 10px
+}
+.upgrade-button:hover{
+    transition: 0s;
+    transform: scale(1.2);
+}
+/*
+CONTENUTO INTERNO-IMMAGINI DELLE CANZONI TITOLI NEL CONTAINER IN OVERFLOW
+*/
+.list-link-container{
+    background-color: #141922;
+}
+.listed-link-main{
+    width: 100;
+    
+}
+.listed-link-main >ul{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.listed-link-main >ul >li{
+    display: inline-block;
+    margin: 5px;
+}
+.bottom-border-hover{
+    width: 80%;
+    margin: 0 auto;
+    height: 3px;
+    border-radius: 2px;
+    background-color: lightgreen;
+    display: none;
+}
+.listed-link-main >ul >li >a{
+    text-decoration: none;
+    color: grey;
+    padding: 10px;
 
-.upgrade-button {}
+}
+.listed-link-main >ul >li >a:hover{
+    color: white;
 
+}
+.listed-link-main >ul >li >.bottom-border-hover:hover{
+    
+        animation-duration: 2s;
+        animation-name: fill;
+}
+    @keyframes fill {
+        0%{
+            width: 25%;
+        }
+        50%{
+            width:50%;
+        }
+        100%{
+            width:100%
+        }
+        
+    }
+
+.main-content-cont{
+    background-color: #141922;
+    padding-top: 30px;
+    
+}
+.main-content-cont >h2{
+    color: white;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+.my-row{
+    display: flex;
+    flex-wrap: wrap;   
+}
+.main-content-cont >p{ 
+    font-size: 0.75rem;
+    color: grey;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+.my-col{
+    width: calc((100% / 6) - 20px);
+    margin: 0 10px;
+    text-align: center;
+    
+}
+.my-col >img{
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    padding-bottom: 10px;
+    
+}
+.my-col >h4{
+    color: white;
+    padding-bottom: 10px
+}
+.my-col >p{
+    color: grey;
+    padding-bottom: 10px;
+}
+.rounded-col >img{
+    border-radius: 50%;
+}
 /*
 FOOTER
 */
 footer {
-    --position: fixed;
+    position: sticky;
+    bottom: 0;
     width: 100%;
 
     background-color: #282828;
@@ -155,7 +290,7 @@ footer {
 .footer-container {
     padding-left: 15px;
     padding-right: 15px;
-    min-height: 100px;
+    height: 100px;
     justify-content: space-between;
     align-items: center;
 }
@@ -196,8 +331,6 @@ footer {
 
 .timelaps-bar {
     width: 300px;
-
-
 
 }
 
