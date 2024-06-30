@@ -65,5 +65,7 @@ RESPONSIVE SMARTHPHONE
     margin: 0 auto;
     padding: 0;
    }
-  
+   .timelaps-bar{
+    width: 100%;
+   }
 }

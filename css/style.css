@@ -299,7 +299,7 @@ CONTENUTO INTERNO-IMMAGINI DELLE CANZONI TITOLI NEL CONTAINER IN OVERFLOW
 FOOTER
 */
 footer {
-    position: sticky;
+    
     bottom: 0;
     width: 100%;
     overflow-x: hidden;
@@ -320,8 +320,10 @@ footer {
 }
 
 .album-song-img {
+    background-image: url(https://www.orrorea33giri.com/wp-content/uploads/2009/01/883_-_nord_sud_ovest_est_-_front-1-e1514562356196.jpg);
     width: 50px;
     height: 50px;
+    background-size: contain;
     background-color: white;
 }
 
